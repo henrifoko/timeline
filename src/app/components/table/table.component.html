@@ -6,7 +6,7 @@
             <td *ngFor="let item of row" [ngStyle]="{
                         'width': TABLE_WIDTH/NB_COLUMNS + 'px',
                         'height': TABLE_HEIGHT/NB_ROWS + 'px',
-                    'padding': '1px'}">
+                    'padding': '1px'}" class="box">
                 <div [ngClass]="{
                     'bg-danger': item,
                     'bg-secondary': !item}" class="h-100 w-100"></div>
