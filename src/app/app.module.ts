@@ -7,6 +7,9 @@ import { AuthComponent } from './components/auth/auth.component';
 import { HomeComponent } from './components/home/home.component';
 import { TableComponent } from './components/table/table.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +21,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]
