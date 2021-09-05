@@ -1,3 +1,16 @@
-<div>
-    <!--  -->
+<div class="bg-dark d-flex flex-row justify-content-center align-items-center" [ngStyle]="{
+    'height': (TABLE_HEIGHT + PADDING) + 'px',
+    'width': (TABLE_WIDTH + PADDING) + 'px'}">
+    <table [ngStyle]="{'height': TABLE_HEIGHT, 'width': TABLE_WIDTH}" border="0">
+        <tr *ngFor="let row of matrix">
+            <td *ngFor="let item of row" [ngStyle]="{
+                        'width': TABLE_WIDTH/NB_COLUMNS + 'px',
+                        'height': TABLE_HEIGHT/NB_ROWS + 'px',
+                    'padding': '1px'}">
+                <div [ngClass]="{
+                    'bg-danger': item,
+                    'bg-secondary': !item}" class="h-100 w-100"></div>
+            </td>
+        </tr>
+    </table>
 </div>
