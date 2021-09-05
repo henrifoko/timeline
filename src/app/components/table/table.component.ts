@@ -6,6 +6,9 @@ const TABLE_WIDTH = 500;
 const TABLE_HEIGHT = 500;
 const PADDING = 20;
 
+// Le jour où tout a commencé
+const DAY05092021 = new Date(2021, 9, 5);
+
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
