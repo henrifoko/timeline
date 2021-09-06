@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "timeline-hfk"
+  },
+  "targets": {
+    "timeline-hfk": {
+      "hosting": {
+        "tps": [
+          "timeline-hfk"
+        ]
+      }
+    }
   }
 }
